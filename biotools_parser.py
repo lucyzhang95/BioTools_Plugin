@@ -43,7 +43,9 @@ httprequests.mount("http://", adapter)
 
 def cureationObject():
     
-    '''
+    '''Get source cureation
+    The outbrak.info format of cureation can be found:
+    https://discovery.biothings.io/view/outbreak/ComputationalTool
     '''
     
     now = datetime.now()
@@ -104,7 +106,7 @@ def get_git_bioschemas(biotools_bioschema):
     https://github.com/bio-tools/content/tree/master/data/
     '''
 
-    # pull bioschema from github corresponding to biotoolsID
+    # pull bioschema from github for corresponding biotoolsID
     repos_list = []
     for id in biotools_id:
         if len(biotools_id) > 0:

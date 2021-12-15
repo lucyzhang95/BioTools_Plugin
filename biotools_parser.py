@@ -42,12 +42,10 @@ httprequests.mount("http://", adapter)
 
 
 def cureationObject():
-    
     '''Get source cureation
     The outbrak.info format of cureation can be found:
     https://discovery.biothings.io/view/outbreak/ComputationalTool
     '''
-    
     now = datetime.now()
     cureatedBy = {
         "@type": "Organization",
@@ -59,20 +57,18 @@ def cureationObject():
     return(curatedBy)
 
 def get_biotools_id(biotools_id):
-
     '''Get biotools ids
     bio.tools url:
     https://bio.tools/api/t?page=1&q=COVID-19&sort=score
     Parse through the website pages
     pull out biotoolsID
     '''
-
-    # define total number of tools from web info
+    # define total number of tools from web count info
     url = 'https://bio.tools/api/t'
     payloads = {'format': 'json', 'q': 'COVID-19', 'sort':'score'}
-    r = requests.get(url, params=payloads, timeout=5).json()
-    count = r['count']
-    list_num = len(r['list'])
+    response = requests.get(url, params=payloads, timeout=5).json()
+    count = response['count']
+    list_num = len(response['list'])
     
     rounds = round(count/list_num) + 1
     
@@ -81,9 +77,10 @@ def get_biotools_id(biotools_id):
     for page in range(1, rounds):
         try:
             payloads_all = {'format': 'json', 'page': page, 'q': 'COVID-19', 'sort': 'score'}
-            r = requests.get(url, params=payloads_all, timeout=5).json()
-            r_list = r['list']
-            biotools_list.extend(r_list)
+            biotool_response = requests.get(url, params=payloads_all, timeout=5)
+            biotool_json = biotool_response.json()
+            bio_response_list = biotool_json['list']
+            biotools_list.extend(biotool_json)
         except:
             biotools_list.extend(None)
     
@@ -96,29 +93,26 @@ def get_biotools_id(biotools_id):
                 biotools_id.append(None)
         
         time.sleep(1)
-    
     return(biotools_id)
 
 def get_git_bioschemas(biotools_bioschema):
-
     '''Get corresponding bioschemas
     github url: 
     https://github.com/bio-tools/content/tree/master/data/
     '''
-
-    # pull bioschema from github for corresponding biotoolsID
+    # pull bioschema from github with corresponding biotoolsID
     repos_list = []
     for id in biotools_id:
         if len(biotools_id) > 0:
             try:
                 git_url = f'https://raw.githubusercontent.com/bio-tools/content/master/data/{id}/{id}.bioschemas.jsonld'
-                git = requests.get(git_url, timeout=5).json()
-                repos_list.append(git)
+                git_response = requests.get(git_url, timeout=5)
+                git_json = git_response.json()
+                repos_list.append(git_json)
             except:
                 repos_list.append(None)
 
         time.sleep(1)
-
     return(repos_list)
 
 

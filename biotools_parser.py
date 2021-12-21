@@ -50,9 +50,9 @@ def cureationObject():
     cureatedBy = {
         "@type": "Organization",
         "identifier" : "elixier bio.tools",
-        "url": "https://bio.tools/api/t?page=1&q=COVID-19&sort=score", #this link only shows page 1
-        "name": "COVID-19 related biotools",
-        "curationDate": now.strftime("%Y-%m-%d, %H:%M:%S")
+        "url": "https://bio.tools/api/t?q=COVID-19&sort=score",
+        "name": "bio.tools",
+        "curationDate": now.strftime("%Y-%m-%d")
     }
     return(curatedBy)
 
@@ -60,38 +60,35 @@ def get_biotools_id(biotools_id):
     '''Get biotools ids
     bio.tools url:
     https://bio.tools/api/t?page=1&q=COVID-19&sort=score
-    Parse through the website pages
-    pull out biotoolsID
+    Parse through the json pages
+    pull out biotoolsID from the list per page
     '''
-    # define total number of tools from web count info
+    # Get total biotools count
     url = 'https://bio.tools/api/t'
-    payloads = {'format': 'json', 'q': 'COVID-19', 'sort':'score'}
-    response = requests.get(url, params=payloads, timeout=5).json()
+    queries = {'format': 'json', 'q': 'COVID-19', 'sort':'score'}
+    response = requests.get(url, params=queries, timeout=5).json()
     count = response['count']
-    list_num = len(response['list'])
+    list_len = len(response['list'])
     
-    rounds = round(count/list_num) + 1
-    
-    # loop through the pages to get biotoolsID
-    biotools_list = []
-    for page in range(1, rounds):
-        try:
-            payloads_all = {'format': 'json', 'page': page, 'q': 'COVID-19', 'sort': 'score'}
-            biotool_response = requests.get(url, params=payloads_all, timeout=5)
-            biotool_json = biotool_response.json()
-            bio_response_list = biotool_json['list']
-            biotools_list.extend(biotool_json)
-        except:
-            biotools_list.extend(None)
+    rounds = round(count/list_len)
     
     biotools_id = []
-    for n in range(0, len(biotools_list)):
-        if len(biotools_list) > 0:
-            try:
-                biotools_id.append(biotools_list[n]['biotoolsID'])
-            except:
-                biotools_id.append(None)
+    
+    page = 0
+    while page < rounds:
+        page += 1
+        queries_all = {
+            'format': 'json', 
+            'page': page, 
+            'q': 'COVID-19', 
+            'sort': 'score'}
+        biotool_response = requests.get(url, params=queries_all, timeout=5)
+        biotools_json = biotool_response.json()
         
+        for value in biotools_json['list']:
+            ids = value['biotoolsID']
+            biotools_id.append(ids)
+
         time.sleep(1)
     return(biotools_id)
 

@@ -54,9 +54,29 @@ def cureationObject():
         "name": "bio.tools",
         "curationDate": now.strftime("%Y-%m-%d")
     }
-    return(curatedBy)
+    return(cureatedBy)
 
-def get_biotools_id(biotools_id):
+#print(cureationObject())
+
+def infectiousAgent():
+    infectiousAgent = {
+        "@type": "DefinedTerm",
+        "name": "SARS-CoV-2",
+        "identifier": "NCBITaxon_2697049",
+        "url": "http://purl.obolibrary.org/obo/NCBITaxon_2697049" 
+        }
+    return(infectiousAgent)
+    
+def infectiousDisease():
+    infectiousDisease = {
+        "@type": "DefinedTerm",
+        "name": "COVID-19",
+        "identifier": "MONDO_0100096",
+        "url": "http://purl.obolibrary.org/obo/MONDO_0100096"
+        }
+    return(infectiousDisease)
+
+def get_biotools_id():
     '''Get biotools ids
     bio.tools url:
     https://bio.tools/api/t?page=1&q=COVID-19&sort=score
@@ -92,15 +112,16 @@ def get_biotools_id(biotools_id):
         time.sleep(1)
     return(biotools_id)
 
-def get_git_bioschemas(biotools_bioschema):
+def get_git_bioschemas():
     '''Get corresponding bioschemas
     github url: 
     https://github.com/bio-tools/content/tree/master/data/
     '''
     # pull bioschema from github with corresponding biotoolsID
     repos_list = []
-    for id in biotools_id:
-        if len(biotools_id) > 0:
+    git_ids = get_biotools_id()
+    for id in git_ids:
+        if len(git_ids) > 0:
             try:
                 git_url = f'https://raw.githubusercontent.com/bio-tools/content/master/data/{id}/{id}.bioschemas.jsonld'
                 git_response = requests.get(git_url, timeout=5)
@@ -111,5 +132,7 @@ def get_git_bioschemas(biotools_bioschema):
 
         time.sleep(1)
     return(repos_list)
+
+#print(len(get_git_bioschemas()))
 
 

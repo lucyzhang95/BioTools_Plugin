@@ -1,0 +1,196 @@
+---
+title: "biotool_property_frequency"
+author: "Lucy"
+date: "1/25/2022"
+output:
+  html_document:
+    code_folding: hide 
+    number_sections: False
+    theme: flatly
+    toc: yes
+    toc_float: yes
+  pdf_document:
+    toc: yes
+    fig_caption: True
+    df_print: kable
+editor_options:
+  chunk_output_type: inline
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(message = FALSE, warning = FALSE, error=FALSE)
+library(stringr)
+library(ggplot2)
+library(tidyverse)
+library(table1)
+```
+
+
+# Biotool.json Property Check
+```{r}
+# read biotool_property_check.csv file
+df <- read.csv('biotool_property_check.csv')
+```
+
+## dataframe
+```{r}
+# cleanup the df
+df_clean <- df %>%
+  select(typeEntity, typeRole, accessibility, owner, publication, biotoolsID) %>%
+  mutate(typeRole = str_remove_all(typeRole, "\\[|\\]|'|'")) %>%
+  separate(typeRole, 
+           c("typeRole.1", "typeRole.2", "typeRol.3", "typeRole.4"), 
+           sep = ",") %>%
+  mutate_all(na_if, "") %>%
+  separate(publication, c("doi"), sep = "[:]") %>%
+  mutate(doi = str_remove_all(doi, "\\[|\\{|'|'"))
+
+head(df_clean)
+```
+
+## Summary Table
+
+```{r}
+# Total summary of properties 
+table1(~ typeEntity + typeRole.1 + accessibility + owner + doi,
+       data = df_clean,
+       topclass = "Rtable1-zebra")
+```
+
+
+## Plots
+### typeEntity
+```{r}
+# Plot typeEntity
+pct_format = scales::percent_format(accuracy = .1)
+entity_plot <- ggplot(df_clean, aes(typeEntity)) +
+  geom_bar() +
+  theme_bw() +
+  xlab("credit['typeEntity']") +
+  ylab("Count") +
+  geom_text(
+    aes(
+      label = sprintf(
+        "%d (%s)",
+        ..count..,
+        pct_format(..count../sum(..count..))
+        )
+      ),
+    stat = "count",
+    nudge_y = 10,
+    size = 4
+    )
+  
+
+entity_plot
+```
+
+### typeRole.1
+```{r}
+typeRole_plot <- ggplot(df_clean, aes(typeRole.1)) +
+  geom_bar() +
+  theme_bw() +
+  xlab("credit['typeRole']") +
+  ylab("Count") +
+  geom_text(
+    aes(
+      label = sprintf(
+        "%d (%s)",
+        ..count..,
+        pct_format(..count../sum(..count..))
+        )
+      ),
+    stat = "count",
+    nudge_y = 10,
+    size = 4
+    )
+  
+
+typeRole_plot
+```
+
+### accessibility
+```{r}
+accessibility_plot <- ggplot(df_clean, aes(accessibility)) +
+  geom_bar() +
+  theme_bw() +
+  xlab("accessibility") +
+  ylab("Count") +
+  geom_text(
+    aes(
+      label = sprintf(
+        "%d (%s)",
+        ..count..,
+        pct_format(..count../sum(..count..))
+        )
+      ),
+    stat = "count",
+    nudge_y = 10,
+    size = 4
+    )
+  
+
+accessibility_plot
+```
+
+
+### owner
+```{r}
+owner_plot <- ggplot(df_clean, aes(owner)) +
+  geom_bar() +
+  theme_bw() +
+  xlab("owner") +
+  ylab("Count") +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
+  geom_text(
+    aes(
+      label = sprintf(
+        "%d (%s)",
+        ..count..,
+        pct_format(..count../sum(..count..))
+        )
+      ),
+    stat = "count",
+    nudge_y = 5,
+    size = 2.5
+    )
+  
+
+owner_plot
+```
+
+### publication
+Metadata are the tools that do not have doi, but have authors and abstract
+```{r}
+doi_plot <- ggplot(df_clean, aes(doi)) +
+  geom_bar() +
+  theme_bw() +
+  xlab("publication") +
+  ylab("Count") +
+  geom_text(
+    aes(
+      label = sprintf(
+        "%d (%s)",
+        ..count..,
+        pct_format(..count../sum(..count..))
+        )
+      ),
+    stat = "count",
+    nudge_y = 5,
+    size = 2.5
+    )
+  
+
+doi_plot
+```
+
+
+
+
+
+
+
+
+
+

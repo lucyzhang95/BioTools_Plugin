@@ -1,0 +1,980 @@
+{
+  "count": 265,
+  "next": null,
+  "previous": "?page=26",
+  "list": [
+    {
+      "name": "mesophotic.org",
+      "description": "A repository for scientific information on mesophotic ecosystems.\n\nRepository for information on mesophotic coral ecosystems.\n\nMesophotic.org: an information repository on mesophotic coral ecosystems.\n\nMesophotic.org is a curated repository for information on mesophotic coral ecosystems, with the aim to provide an independent, open-source platform for and by the ever-growing mesophotic research community.\n\nLatest update: November 19, 2019.\n\nYou are currently looking at a beta release of the new website. Apologies for the inconvenience, but for now expect some (= lots of) bugs & mistakes!.\n\nThe following are instructions to download and manipulate the metadata from the \"Mesophotic.org\" repository in R (https: www.r-project.org ).\n\nThe following graphs summarize the metadata across the 689 scientific articles in this database that are validated and present original data from mesophotic depths.\n\nBehind the science: Echinoderm diversity with new genera described in Rapa-Nui (Easter Island)",
+      "homepage": "http://mesophotic.org/",
+      "biotoolsID": "mesophotic.org",
+      "biotoolsCURIE": "biotools:mesophotic.org",
+      "version": [],
+      "otherID": [],
+      "relation": [],
+      "function": [
+        {
+          "operation": [
+            {
+              "uri": "http://edamontology.org/operation_2421",
+              "term": "Database search"
+            },
+            {
+              "uri": "http://edamontology.org/operation_2422",
+              "term": "Data retrieval"
+            },
+            {
+              "uri": "http://edamontology.org/operation_3778",
+              "term": "Text annotation"
+            }
+          ],
+          "input": [],
+          "output": [],
+          "note": null,
+          "cmd": null
+        }
+      ],
+      "toolType": [
+        "Web application"
+      ],
+      "topic": [
+        {
+          "uri": "http://edamontology.org/topic_3050",
+          "term": "Biodiversity"
+        },
+        {
+          "uri": "http://edamontology.org/topic_3068",
+          "term": "Literature and language"
+        },
+        {
+          "uri": "http://edamontology.org/topic_3489",
+          "term": "Database management"
+        }
+      ],
+      "operatingSystem": [],
+      "language": [
+        "JavaScript",
+        "Ruby"
+      ],
+      "license": "MIT",
+      "collectionID": [],
+      "maturity": null,
+      "cost": null,
+      "accessibility": null,
+      "elixirPlatform": [],
+      "elixirNode": [],
+      "elixirCommunity": [],
+      "link": [
+        {
+          "url": "http://mesophotic.org/metadata",
+          "type": [
+            "Other"
+          ],
+          "note": null
+        },
+        {
+          "url": "http://mesophotic.org/species",
+          "type": [
+            "Other"
+          ],
+          "note": null
+        },
+        {
+          "url": "http://www.mesophotic.org/stats",
+          "type": [
+            "Other"
+          ],
+          "note": null
+        },
+        {
+          "url": "http://www.github.com/pimbongaerts/mesophotic",
+          "type": [
+            "Repository"
+          ],
+          "note": null
+        },
+        {
+          "url": "https://github.com/pimbongaerts/mesophotic/issues",
+          "type": [
+            "Issue tracker"
+          ],
+          "note": null
+        }
+      ],
+      "download": [],
+      "documentation": [
+        {
+          "url": "http://mesophotic.org/tutorial",
+          "type": [
+            "Training material"
+          ],
+          "note": null
+        }
+      ],
+      "publication": [
+        {
+          "doi": "10.1093/DATABASE/BAZ140",
+          "pmid": "31836897",
+          "pmcid": "PMC6911162",
+          "type": [],
+          "version": null,
+          "note": null,
+          "metadata": {
+            "title": "Mesophotic.org: a repository for scientific information on mesophotic ecosystems",
+            "abstract": "\u00a9 The Author(s) 2019. Published by Oxford University Press.Mesophotic coral ecosystems (MCEs) and temperate mesophotic ecosystems (TMEs) occur at depths of roughly 30-150 m depth and are characterized by the presence of photosynthetic organisms despite reduced light availability. Exploration of these ecosystems dates back several decades, but our knowledge remained extremely limited until about a decade ago, when a renewed interest resulted in the establishment of a rapidly growing research community. Here, we present the 'mesophotic.org' database, a comprehensive and curated repository of scientific literature on mesophotic ecosystems. Through both manually curated and automatically extracted metadata, the repository facilitates rapid retrieval of available information about particular topics (e.g. taxa or geographic regions), exploration of spatial/temporal trends in research and identification of knowledge gaps. The repository can be queried to comprehensively obtain available data to address large-scale questions and guide future research directions. Overall, the 'mesophotic.org' repository provides an independent and open-source platform for the ever-growing research community working on MCEs and TMEs to collate and expedite our understanding of the occurrence, composition and functioning of these ecosystems. Database URL: http://mesophotic.org/.",
+            "date": "2019-01-01T00:00:00Z",
+            "citationCount": 4,
+            "authors": [
+              {
+                "name": "Bongaerts P."
+              },
+              {
+                "name": "Perez-Rosales G."
+              },
+              {
+                "name": "Radice V.Z."
+              },
+              {
+                "name": "Eyal G."
+              },
+              {
+                "name": "Gori A."
+              },
+              {
+                "name": "Gress E."
+              },
+              {
+                "name": "Hammerman N.M."
+              },
+              {
+                "name": "Hernandez-Agreda A."
+              },
+              {
+                "name": "Laverick J."
+              },
+              {
+                "name": "Muir P."
+              },
+              {
+                "name": "Pinheiro H."
+              },
+              {
+                "name": "Pyle R.L."
+              },
+              {
+                "name": "Rocha L."
+              },
+              {
+                "name": "Turner J.A."
+              },
+              {
+                "name": "Booker R."
+              }
+            ],
+            "journal": "Database : the journal of biological databases and curation"
+          }
+        }
+      ],
+      "credit": [
+        {
+          "name": "Pim Bongaerts",
+          "email": "pim@calacademy.org",
+          "url": null,
+          "orcidid": "https://orcid.org/0000-0001-6747-6044",
+          "gridid": null,
+          "rorid": null,
+          "fundrefid": null,
+          "typeEntity": "Person",
+          "typeRole": [],
+          "note": null
+        },
+        {
+          "name": "Veronica Z Radice",
+          "email": null,
+          "url": null,
+          "orcidid": null,
+          "gridid": null,
+          "rorid": null,
+          "fundrefid": null,
+          "typeEntity": "Person",
+          "typeRole": [],
+          "note": null
+        }
+      ],
+      "community": null,
+      "owner": "Pub2Tools",
+      "additionDate": "2020-01-14T19:31:21Z",
+      "lastUpdate": "2020-12-23T08:50:20Z",
+      "editPermission": {
+        "type": "public",
+        "authors": []
+      },
+      "validated": 1,
+      "homepage_status": 0,
+      "elixir_badge": 0,
+      "confidence_flag": "tool"
+    },
+    {
+      "name": "circAtlas",
+      "description": "circAtlas is an integrated resource of one million highly accurate circular RNAs from 1070 vertebrate transcriptomes. Existing circular RNA (circRNA) databases have become essential for transcriptomics. However, most are unsuitable for mining in-depth information for candidate circRNA prioritization. To address this, we integrate circular transcript collections to develop the circAtlas database based on 1070 RNA-seq samples collected from 19 normal tissues across six vertebrate species. This database contains 1,007,087 highly reliable circRNAs, of which over 81.3% have been assembled into full-length sequences. We profile their expression pattern, conservation, and functional annotation. We describe a novel multiple conservation score, co-expression, and regulatory networks for circRNA annotation and prioritization.",
+      "homepage": "http://circatlas.biols.ac.cn/",
+      "biotoolsID": "circatlas",
+      "biotoolsCURIE": "biotools:circatlas",
+      "version": [],
+      "otherID": [],
+      "relation": [],
+      "function": [
+        {
+          "operation": [
+            {
+              "uri": "http://edamontology.org/operation_2495",
+              "term": "Expression analysis"
+            },
+            {
+              "uri": "http://edamontology.org/operation_0310",
+              "term": "Sequence assembly"
+            },
+            {
+              "uri": "http://edamontology.org/operation_0224",
+              "term": "Query and retrieval"
+            }
+          ],
+          "input": [],
+          "output": [],
+          "note": null,
+          "cmd": null
+        }
+      ],
+      "toolType": [
+        "Database portal"
+      ],
+      "topic": [
+        {
+          "uri": "http://edamontology.org/topic_3170",
+          "term": "RNA-Seq"
+        },
+        {
+          "uri": "http://edamontology.org/topic_3308",
+          "term": "Transcriptomics"
+        },
+        {
+          "uri": "http://edamontology.org/topic_0621",
+          "term": "Model organisms"
+        },
+        {
+          "uri": "http://edamontology.org/topic_0659",
+          "term": "Functional, regulatory and non-coding RNA"
+        },
+        {
+          "uri": "http://edamontology.org/topic_0749",
+          "term": "Transcription factors and regulatory sites"
+        }
+      ],
+      "operatingSystem": [],
+      "language": [],
+      "license": null,
+      "collectionID": [],
+      "maturity": null,
+      "cost": null,
+      "accessibility": null,
+      "elixirPlatform": [],
+      "elixirNode": [],
+      "elixirCommunity": [],
+      "link": [],
+      "download": [],
+      "documentation": [],
+      "publication": [
+        {
+          "doi": "10.1186/S13059-020-02018-Y",
+          "pmid": "32345360",
+          "pmcid": "PMC7187532",
+          "type": [],
+          "version": null,
+          "note": null,
+          "metadata": {
+            "title": "CircAtlas: An integrated resource of one million highly accurate circular RNAs from 1070 vertebrate transcriptomes",
+            "abstract": "\u00a9 2020 The Author(s).Existing circular RNA (circRNA) databases have become essential for transcriptomics. However, most are unsuitable for mining in-depth information for candidate circRNA prioritization. To address this, we integrate circular transcript collections to develop the circAtlas database based on 1070 RNA-seq samples collected from 19 normal tissues across six vertebrate species. This database contains 1,007,087 highly reliable circRNAs, of which over 81.3% have been assembled into full-length sequences. We profile their expression pattern, conservation, and functional annotation. We describe a novel multiple conservation score, co-expression, and regulatory networks for circRNA annotation and prioritization. CircAtlas can be accessed at http://circatlas.biols.ac.cn/.",
+            "date": "2020-04-28T00:00:00Z",
+            "citationCount": 48,
+            "authors": [
+              {
+                "name": "Wu W."
+              },
+              {
+                "name": "Ji P."
+              },
+              {
+                "name": "Zhao F."
+              }
+            ],
+            "journal": "Genome Biology"
+          }
+        }
+      ],
+      "credit": [
+        {
+          "name": "Fangqing Zhao",
+          "email": "zhfq@biols.ac.cn",
+          "url": null,
+          "orcidid": null,
+          "gridid": null,
+          "rorid": null,
+          "fundrefid": null,
+          "typeEntity": "Person",
+          "typeRole": [],
+          "note": null
+        }
+      ],
+      "community": null,
+      "owner": "Kigaard",
+      "additionDate": "2021-01-18T08:36:52Z",
+      "lastUpdate": "2021-02-11T18:43:17Z",
+      "editPermission": {
+        "type": "private",
+        "authors": []
+      },
+      "validated": 0,
+      "homepage_status": 0,
+      "elixir_badge": 0,
+      "confidence_flag": "tool"
+    },
+    {
+      "name": "GoldenMutagenesis",
+      "description": "The Golden Gate cloning technique has been proven to be a highly efficient toolbox for a variety of cloning setups. Based on its modular concept it is particularly suitable for the use in multiple-site mutagenesis approaches. In this technical note we developed a protocol termed Golden Mutagenesis for the rapid, easy, reliable and cheap formation of mutagenesis libraries. One to five positions could be altered in parallel or simultaneously within two days. To facilitate the implementation of this technique, this R-library has been developed for the automated primer design and the graphical evaluation of sequencing results to determine the quality of the library.",
+      "homepage": "https://msbi.ipb-halle.de/GoldenMutagenesisWeb",
+      "biotoolsID": "GoldenMutagenesis",
+      "biotoolsCURIE": "biotools:GoldenMutagenesis",
+      "version": [
+        "1.1.1"
+      ],
+      "otherID": [],
+      "relation": [],
+      "function": [
+        {
+          "operation": [
+            {
+              "uri": "http://edamontology.org/operation_0308",
+              "term": "PCR primer design"
+            }
+          ],
+          "input": [
+            {
+              "data": {
+                "uri": "http://edamontology.org/data_3494",
+                "term": "DNA sequence"
+              },
+              "format": [
+                {
+                  "uri": "http://edamontology.org/format_2200",
+                  "term": "FASTA-like (text)"
+                }
+              ]
+            },
+            {
+              "data": {
+                "uri": "http://edamontology.org/data_3498",
+                "term": "Sequence variations"
+              },
+              "format": [
+                {
+                  "uri": "http://edamontology.org/format_1915",
+                  "term": "Format"
+                }
+              ]
+            }
+          ],
+          "output": [
+            {
+              "data": {
+                "uri": "http://edamontology.org/data_1240",
+                "term": "PCR primers"
+              },
+              "format": [
+                {
+                  "uri": "http://edamontology.org/format_2330",
+                  "term": "Textual format"
+                },
+                {
+                  "uri": "http://edamontology.org/format_2331",
+                  "term": "HTML"
+                },
+                {
+                  "uri": "http://edamontology.org/format_3508",
+                  "term": "PDF"
+                }
+              ]
+            },
+            {
+              "data": {
+                "uri": "http://edamontology.org/data_2531",
+                "term": "Protocol"
+              },
+              "format": [
+                {
+                  "uri": "http://edamontology.org/format_3508",
+                  "term": "PDF"
+                }
+              ]
+            }
+          ],
+          "note": "input: open reading frame (ORF) of a protein of interest \nA) domestication of open reading frames\ncheck for internal type IIs restriction sites (BsaI and BbsI); if true: suggestion for silent mutations to remove internal cleavage sites (domestication); primers are designed considering common codon usages (E. coli; S. cerevisiae; A. thaliana)\n\nB) Defined (multiple) point mutagenesis \nchoose defined amino acid residue(s) within the ORF and specify amino acid exchange (19 amino acid substitutions and stop codon); primers are designed considering common codon usages (E. coli; S. cerevisiae; A. thaliana)\n\nC) (multiple) saturation mutagenesis\nchoose defined amino acid residue(s) within the ORF and choose predefined codon degeneracy (options: NNN; NNK; NNS; NDT; DBK; NRT) to perform saturation mutagenesis",
+          "cmd": null
+        },
+        {
+          "operation": [
+            {
+              "uri": "http://edamontology.org/operation_3675",
+              "term": "Variant filtering"
+            }
+          ],
+          "input": [
+            {
+              "data": {
+                "uri": "http://edamontology.org/data_3494",
+                "term": "DNA sequence"
+              },
+              "format": [
+                {
+                  "uri": "http://edamontology.org/format_2200",
+                  "term": "FASTA-like (text)"
+                }
+              ]
+            },
+            {
+              "data": {
+                "uri": "http://edamontology.org/data_0924",
+                "term": "Sequence trace"
+              },
+              "format": [
+                {
+                  "uri": "http://edamontology.org/format_3000",
+                  "term": "AB1"
+                }
+              ]
+            }
+          ],
+          "output": [
+            {
+              "data": {
+                "uri": "http://edamontology.org/data_2884",
+                "term": "Plot"
+              },
+              "format": [
+                {
+                  "uri": "http://edamontology.org/format_3603",
+                  "term": "PNG"
+                }
+              ]
+            }
+          ],
+          "note": "Mapping of a randomized saturation library (defined codon degeneracy and expected statistical perfect base pair distribution) as a pooled plasmid library to the wild type template sequence.\nAssessment of respective signal intensity and visualisation as nucleobase pie chart distributions",
+          "cmd": null
+        }
+      ],
+      "toolType": [
+        "Library",
+        "Web application"
+      ],
+      "topic": [
+        {
+          "uri": "http://edamontology.org/topic_0632",
+          "term": "Probes and primers"
+        },
+        {
+          "uri": "http://edamontology.org/topic_3895",
+          "term": "Synthetic biology"
+        },
+        {
+          "uri": "http://edamontology.org/topic_3361",
+          "term": "Laboratory techniques"
+        },
+        {
+          "uri": "http://edamontology.org/topic_2533",
+          "term": "DNA mutation"
+        },
+        {
+          "uri": "http://edamontology.org/topic_0601",
+          "term": "Protein modifications"
+        },
+        {
+          "uri": "http://edamontology.org/topic_0196",
+          "term": "Sequence assembly"
+        },
+        {
+          "uri": "http://edamontology.org/topic_0091",
+          "term": "Bioinformatics"
+        }
+      ],
+      "operatingSystem": [
+        "Linux",
+        "Windows",
+        "Mac"
+      ],
+      "language": [
+        "R"
+      ],
+      "license": "LGPL-3.0",
+      "collectionID": [],
+      "maturity": "Mature",
+      "cost": "Free of charge",
+      "accessibility": "Open access",
+      "elixirPlatform": [],
+      "elixirNode": [],
+      "elixirCommunity": [],
+      "link": [
+        {
+          "url": "https://github.com/ipb-halle/GoldenMutagenesis",
+          "type": [
+            "Repository"
+          ],
+          "note": "R Library Source Code"
+        },
+        {
+          "url": "https://github.com/ipb-halle/GoldenMutagenesis/issues",
+          "type": [
+            "Issue tracker"
+          ],
+          "note": "Issue tracker of the library."
+        },
+        {
+          "url": "https://github.com/ipb-halle/GoldenMutagenesisWeb",
+          "type": [
+            "Repository"
+          ],
+          "note": "Source of the web interface"
+        },
+        {
+          "url": "https://github.com/ipb-halle/GoldenMutagenesisWeb/issues",
+          "type": [
+            "Issue tracker"
+          ],
+          "note": "Issue tracker of the web interface"
+        }
+      ],
+      "download": [
+        {
+          "url": "https://github.com/ipb-halle/GoldenMutagenesis/releases/download/1.1.1/GoldenMutagenesis_1.1.1.tar.gz",
+          "type": "Software package",
+          "note": null,
+          "version": "1.1.1"
+        }
+      ],
+      "documentation": [],
+      "publication": [
+        {
+          "doi": "10.1038/s41598-019-47376-1",
+          "pmid": "31358887",
+          "pmcid": "PMC6662682",
+          "type": [
+            "Primary"
+          ],
+          "version": null,
+          "note": null,
+          "metadata": {
+            "title": "Golden Mutagenesis: An efficient multi-site-saturation mutagenesis approach by Golden Gate cloning with automated primer design",
+            "abstract": "\u00a9 2019, The Author(s).Site-directed methods for the generation of genetic diversity are essential tools in the field of directed enzyme evolution. The Golden Gate cloning technique has been proven to be an efficient tool for a variety of cloning setups. The utilization of restriction enzymes which cut outside of their recognition domain allows the assembly of multiple gene fragments obtained by PCR amplification without altering the open reading frame of the reconstituted gene. We have developed a protocol, termed Golden Mutagenesis that allows the rapid, straightforward, reliable and inexpensive construction of mutagenesis libraries. One to five amino acid positions within a coding sequence could be altered simultaneously using a protocol which can be performed within one day. To facilitate the implementation of this technique, a software library and web application for automated primer design and for the graphical evaluation of the randomization success based on the sequencing results was developed. This allows facile primer design and application of Golden Mutagenesis also for laboratories, which are not specialized in molecular biology.",
+            "date": "2019-12-01T00:00:00Z",
+            "citationCount": 17,
+            "authors": [
+              {
+                "name": "Pullmann P."
+              },
+              {
+                "name": "Ulpinnis C."
+              },
+              {
+                "name": "Marillonnet S."
+              },
+              {
+                "name": "Gruetzner R."
+              },
+              {
+                "name": "Neumann S."
+              },
+              {
+                "name": "Weissenborn M.J."
+              }
+            ],
+            "journal": "Scientific Reports"
+          }
+        },
+        {
+          "doi": "10.1101/453621",
+          "pmid": null,
+          "pmcid": null,
+          "type": [
+            "Other"
+          ],
+          "version": "preprint",
+          "note": null,
+          "metadata": null
+        }
+      ],
+      "credit": [
+        {
+          "name": "Chris Ulpinnis",
+          "email": "chris.ulpinnis@ipb-halle.de",
+          "url": "https://www.ipb-halle.de/mitarbeiter/chris-ulpinnis/",
+          "orcidid": "https://orcid.org/0000-0001-5444-9282",
+          "gridid": null,
+          "rorid": null,
+          "fundrefid": null,
+          "typeEntity": "Person",
+          "typeRole": [
+            "Maintainer",
+            "Developer",
+            "Documentor"
+          ],
+          "note": null
+        },
+        {
+          "name": "Pascal P\u00fcllmann",
+          "email": "Pascal.Puellmann@ipb-halle.de",
+          "url": "https://www.ipb-halle.de/mitarbeiter/pascal-puellmann/",
+          "orcidid": "https://orcid.org/0000-0002-9212-9957",
+          "gridid": null,
+          "rorid": null,
+          "fundrefid": null,
+          "typeEntity": "Person",
+          "typeRole": [
+            "Contributor",
+            "Support"
+          ],
+          "note": null
+        },
+        {
+          "name": "Leibniz Institute of Plant Biochemistry",
+          "email": null,
+          "url": "https://www.ipb-halle.de",
+          "orcidid": null,
+          "gridid": null,
+          "rorid": null,
+          "fundrefid": null,
+          "typeEntity": "Institute",
+          "typeRole": [],
+          "note": null
+        },
+        {
+          "name": "Bioinformatics and Scientific Data",
+          "email": "sneumann@ipb-halle.de",
+          "url": "https://www.ipb-halle.de/en/research/synergy-research-groups/research-groups/bioinformatics-scientific-data/",
+          "orcidid": null,
+          "gridid": null,
+          "rorid": null,
+          "fundrefid": null,
+          "typeEntity": "Division",
+          "typeRole": [
+            "Maintainer"
+          ],
+          "note": null
+        },
+        {
+          "name": "Bioorganic Chemistry - Weissenborn lab",
+          "email": "Martin.Weissenborn@ipb-halle.de",
+          "url": "https://www.ipb-halle.de/en/research/independent-junior-research-groups/research-groups/bioorganic-chemistry/",
+          "orcidid": null,
+          "gridid": null,
+          "rorid": null,
+          "fundrefid": null,
+          "typeEntity": "Division",
+          "typeRole": [
+            "Support"
+          ],
+          "note": null
+        }
+      ],
+      "community": null,
+      "owner": "culpinnis",
+      "additionDate": "2019-10-24T14:44:43Z",
+      "lastUpdate": "2020-06-16T10:55:26Z",
+      "editPermission": {
+        "type": "private",
+        "authors": []
+      },
+      "validated": 1,
+      "homepage_status": 0,
+      "elixir_badge": 0,
+      "confidence_flag": null
+    },
+    {
+      "name": "PyLandStats",
+      "description": "An open-source Pythonic library to compute landscape metrics.\n\nOpen-source Python library to compute landscape metrics.\n\nExample notebooks of the PyLandStats library.\n\nTest and Deploy Your Code with Confidence.\n\nTest Coverage History & Statistics.\n\nPyLandStats documentation! \u2014 PyLandStats 2.0.0a1 documentation.\n\nCitation: Bosch M. 2019. \"PyLandStats: An open-source Pythonic library to compute landscape metrics\". PLOS ONE, 14(12), 1-19. doi.org/10.1371/journal.pone.0225734.\n\nCitation: Bosch M. 2019. \"PyLandStats: An open-source Pythonic library to compute landscape metrics\". Preprint available at bioRxiv. https://doi.org/10.1101/715052.\n\nTravis CI enables your team to test and ship your apps with confidence. Easily sync your projects with Travis CI and you'll be testing your code in minutes.\n\nTest code coverage history for martibosch/pylandstats.\n\nOpen-source Pythonic library to compute landscape metrics within the PyData stack (NumPy, pandas, matplotlib...)",
+      "homepage": "https://anaconda.org/conda-forge/pylandstats",
+      "biotoolsID": "PyLandStats",
+      "biotoolsCURIE": "biotools:PyLandStats",
+      "version": [],
+      "otherID": [],
+      "relation": [],
+      "function": [
+        {
+          "operation": [
+            {
+              "uri": "http://edamontology.org/operation_3891",
+              "term": "Essential dynamics"
+            },
+            {
+              "uri": "http://edamontology.org/operation_0337",
+              "term": "Visualisation"
+            },
+            {
+              "uri": "http://edamontology.org/operation_2238",
+              "term": "Statistical calculation"
+            }
+          ],
+          "input": [],
+          "output": [],
+          "note": null,
+          "cmd": null
+        }
+      ],
+      "toolType": [],
+      "topic": [
+        {
+          "uri": "http://edamontology.org/topic_0610",
+          "term": "Ecology"
+        },
+        {
+          "uri": "http://edamontology.org/topic_3372",
+          "term": "Software engineering"
+        },
+        {
+          "uri": "http://edamontology.org/topic_0769",
+          "term": "Workflows"
+        }
+      ],
+      "operatingSystem": [],
+      "language": [
+        "Python"
+      ],
+      "license": "GPL-3.0",
+      "collectionID": [],
+      "maturity": null,
+      "cost": null,
+      "accessibility": null,
+      "elixirPlatform": [],
+      "elixirNode": [],
+      "elixirCommunity": [],
+      "link": [
+        {
+          "url": "https://github.com/martibosch/pylandstats",
+          "type": [
+            "Repository"
+          ],
+          "note": null
+        },
+        {
+          "url": "https://pypi.org/project/pylandstats/",
+          "type": [
+            "Repository"
+          ],
+          "note": null
+        },
+        {
+          "url": "https://travis-ci.org/martibosch/pylandstats",
+          "type": [
+            "Other"
+          ],
+          "note": null
+        },
+        {
+          "url": "https://coveralls.io/github/martibosch/pylandstats?branch=master",
+          "type": [
+            "Other"
+          ],
+          "note": null
+        },
+        {
+          "url": "https://github.com/martibosch/pylandstats-notebooks",
+          "type": [
+            "Repository"
+          ],
+          "note": null
+        }
+      ],
+      "download": [],
+      "documentation": [
+        {
+          "url": "https://pylandstats.readthedocs.io/",
+          "type": [
+            "User manual"
+          ],
+          "note": null
+        }
+      ],
+      "publication": [
+        {
+          "doi": "10.1371/JOURNAL.PONE.0225734",
+          "pmid": "31805157",
+          "pmcid": "PMC6894873",
+          "type": [],
+          "version": null,
+          "note": null,
+          "metadata": {
+            "title": "PyLandStats: An open-source Pythonic library to compute landscape metrics",
+            "abstract": "\u00a9 2019 Marti Bosch. This is an open access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.Quantifying the spatial pattern of landscapes has become a common task of many studies in landscape ecology. Most of the existing software to compute landscape metrics is not well suited to be used in interactive environments such as Jupyter notebooks nor to be included as part of automated computational workflows. This article presents PyLandStats, an opensource Pythonic library to compute landscape metrics within the scientific Python stack. The PyLandStats package provides a set of methods to quantify landscape patterns, such as the analysis of the spatiotemporal patterns of land use/land cover change or zonal analysis. The implementation is based on the prevailing Python libraries for geospatial data analysis in a way that they can be forthwith integrated into complex computational workflows. Notably, the provided methods offer a large variety of options so that users can employ PyLandStats in the way that best supports their needs. The source code is publicly available, and is organized in a modular object-oriented structure that enhances its maintainability and extensibility.",
+            "date": "2019-12-01T00:00:00Z",
+            "citationCount": 1,
+            "authors": [
+              {
+                "name": "Bosch M."
+              }
+            ],
+            "journal": "PLoS ONE"
+          }
+        }
+      ],
+      "credit": [
+        {
+          "name": "Mart\u00ed Bosch",
+          "email": "marti.bosch@epfl.ch",
+          "url": null,
+          "orcidid": "https://orcid.org/0000-0001-8735-9144",
+          "gridid": null,
+          "rorid": null,
+          "fundrefid": null,
+          "typeEntity": "Person",
+          "typeRole": [],
+          "note": null
+        }
+      ],
+      "community": null,
+      "owner": "Pub2Tools",
+      "additionDate": "2020-01-14T19:37:24Z",
+      "lastUpdate": "2020-12-11T14:09:46Z",
+      "editPermission": {
+        "type": "public",
+        "authors": []
+      },
+      "validated": 1,
+      "homepage_status": 0,
+      "elixir_badge": 0,
+      "confidence_flag": "tool"
+    },
+    {
+      "name": "vhcub",
+      "description": "Virus-host codon usage co-adaptation analysis.\n\nAnalyze the co-adaptation of codon usage between a virus and its host, calculate various codon usage bias measurements as: effective number of codons (ENc) Novembre (2002) <doi:10.1093 oxfordjournals.molbev.a004201>, codon adaptation index (CAI) Sharp and Li (1987) <doi:10.1093 nar 15.3.1281>, relative codon deoptimization index (RCDI) Puigb\u00f2 et al (2010) <doi:10.1186 1756-0500-3-87>, similarity index (SiD) Zhou et al (2013) <doi:10.1371 journal.pone. 0077239>, synonymous codon usage orderliness (SCUO) Wan et al (2004) <doi:10.1186 1471-2148-4-19> and, relative synonymous codon usage (RSCU) Sharp et al (1986) <doi:10.1093 nar 14.13.5125>.\n\nvhcub is an R package to analyze the co-adaptation of codon usage between a virus and its host.\n\nFurthermore, vhcub uses ggplot to visualize two important plots named ENc-GC3 plot and PR2plot, which help to explain what are the factors influence a virus's evolution concerning its CUB",
+      "homepage": "https://cran.r-project.org/web/packages/vhcub/",
+      "biotoolsID": "vhcub",
+      "biotoolsCURIE": "biotools:vhcub",
+      "version": [],
+      "otherID": [],
+      "relation": [],
+      "function": [
+        {
+          "operation": [
+            {
+              "uri": "http://edamontology.org/operation_2962",
+              "term": "Codon usage bias calculation"
+            },
+            {
+              "uri": "http://edamontology.org/operation_0285",
+              "term": "Codon usage table comparison"
+            },
+            {
+              "uri": "http://edamontology.org/operation_0335",
+              "term": "Formatting"
+            },
+            {
+              "uri": "http://edamontology.org/operation_0284",
+              "term": "Codon usage table generation"
+            },
+            {
+              "uri": "http://edamontology.org/operation_2964",
+              "term": "Codon usage fraction calculation"
+            }
+          ],
+          "input": [],
+          "output": [],
+          "note": null,
+          "cmd": null
+        }
+      ],
+      "toolType": [],
+      "topic": [
+        {
+          "uri": "http://edamontology.org/topic_0203",
+          "term": "Gene expression"
+        },
+        {
+          "uri": "http://edamontology.org/topic_2269",
+          "term": "Statistics and probability"
+        },
+        {
+          "uri": "http://edamontology.org/topic_0654",
+          "term": "DNA"
+        }
+      ],
+      "operatingSystem": [],
+      "language": [
+        "R"
+      ],
+      "license": "GPL-3.0",
+      "collectionID": [],
+      "maturity": null,
+      "cost": null,
+      "accessibility": null,
+      "elixirPlatform": [],
+      "elixirNode": [],
+      "elixirCommunity": [],
+      "link": [
+        {
+          "url": "https://CRAN.R-project.org/package=vhcub",
+          "type": [
+            "Repository"
+          ],
+          "note": null
+        },
+        {
+          "url": "https://github.com/AliYoussef96/vhcub",
+          "type": [
+            "Repository"
+          ],
+          "note": null
+        }
+      ],
+      "download": [],
+      "documentation": [],
+      "publication": [
+        {
+          "doi": "10.12688/F1000RESEARCH.21763.1",
+          "pmid": null,
+          "pmcid": null,
+          "type": [],
+          "version": null,
+          "note": null,
+          "metadata": {
+            "title": "vhcub: Virus-host codon usage co-adaptation analysis",
+            "abstract": "\u00a9 2019 Anwar AM et al.Viruses show noticeable evolution to adapt and reproduce within their hosts. Theoretically, patterns and factors that affect the codon usage of viruses should reflect evolutionary changes that allow them to optimize their codon usage to their hosts. Some software tools can analyze the codon usage of organisms; however, their performance has room for improvement, as these tools do not focus on examining the codon usage co-adaptation between viruses and their hosts. This paper describes the vhcub R package, which is a crucial tool used to analyze the co-adaptation of codon usage between a virus and its host, with several implementations of indices and plots. The tool is available from: https://cran.r-project.org/web/packages/vhcub/.",
+            "date": "2019-01-01T00:00:00Z",
+            "citationCount": 2,
+            "authors": [
+              {
+                "name": "Anwar A.M."
+              },
+              {
+                "name": "Soudy M."
+              },
+              {
+                "name": "Mohamed R."
+              }
+            ],
+            "journal": "F1000Research"
+          }
+        }
+      ],
+      "credit": [],
+      "community": null,
+      "owner": "Pub2Tools",
+      "additionDate": "2020-01-14T19:34:52Z",
+      "lastUpdate": "2021-01-02T15:08:20Z",
+      "editPermission": {
+        "type": "public",
+        "authors": []
+      },
+      "validated": 1,
+      "homepage_status": 0,
+      "elixir_badge": 0,
+      "confidence_flag": "tool"
+    }
+  ]
+}

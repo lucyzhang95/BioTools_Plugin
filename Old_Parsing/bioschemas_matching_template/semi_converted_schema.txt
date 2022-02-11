@@ -1,0 +1,88 @@
+[
+  {
+    "@context": {
+      "@base": "https://bio.tools/",
+      "biotools": "https://bio.tools/ontology/",
+      "edam": "http://edamontology.org/",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "sc": "http://schema.org/",
+      "dct": "http://purl.org/dc/terms/",
+      "bsc": "http://bioschemas.org/",
+      "bsct": "http://bioschemas.org/types/",
+    },
+    "@graph": {
+      "@id": "covid-19-preview",
+      "@type": [
+        "sc:SoftwareApplication"
+      ],
+      "applicationCategory": "Computational science tool",
+      "primaryContact": [],
+      "author": [],
+      "contributor": [],
+      "provider": [],
+      "funder": [],
+      "conformsTo": "https://bioschemas.org/profiles/ComputationalTool/1.0-RELEASE",
+      "isRelatedTo": [
+        {
+          "url": "https://doi.org/10.3233/SHTI210124",
+          "doi": "10.3233/SHTI210124",
+          "pmid":"34042709",
+          "@type": "outbreak:Publication"
+        }
+      ],
+      "featureList": [
+        {
+          "@type":"DefinedTerm",
+          "url": "http://edamontology.org/operation_2422",
+          "identifier": "operation_2422"
+        },
+        {
+          "@type":"DefinedTerm",
+          "url": "http://edamontology.org/operation_2421"
+        },
+        {
+          "@id": "http://edamontology.org/operation_3778"
+        }
+      ],
+      "applicationSubCategory": [
+        {
+          "url": "http://edamontology.org/topic_0218",
+          "identifier": "topic_0218",
+          "@type": "DefinedTerm"
+        },
+        {
+          "@id": "http://edamontology.org/topic_0089"
+        },
+        {
+          "@id": "http://edamontology.org/topic_0769"
+        },
+        {
+          "@id": "http://edamontology.org/topic_0634"
+        },
+        {
+          "@id": "http://edamontology.org/topic_3063"
+        }
+      ],
+      "softwareHelp": [
+        {
+          "@type": "CreativeWork",
+          "url": "https://preview.zbmed.de/tutorial"
+          "infectiousAgent":{
+          "@type": "DefinedTerm",
+          "name": "SARS-CoV-2",
+          "identifier": "NCBITaxon_2697049",
+          "url": "http://purl.obolibrary.org/obo/NCBITaxon_2697049" 
+       },
+      "infectiousDisease": 
+       {
+          "@type": "DefinedTerm",
+          "name": "COVID-19",
+          "identifier": "MONDO_0100096",
+          "url": "http://purl.obolibrary.org/obo/MONDO_0100096"
+       }
+
+        }
+      ]
+    }
+  }
+]

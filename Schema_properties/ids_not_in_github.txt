@@ -1,3 +1,0 @@
-Wed Jan 12 14:49:33 2022 
- ['ncov2019', 'epimox', 'pub2tools2021__covid-one-humoral-immune', 'covidprognosis', 'corona_health', 'covidomic', 'covid-net', 'e-covig', 'howru', 'deepr2cov', 'coronaspades', 'covidphy', 'DeepCLIP', 'ictv', 'VADR', 'EVcouplings', 'respiraconnosotros', 'phastsim', 'deepips', 'mmmvi', 'tnet', 't-cov', 'covizu', 'outbreak', 'new_use_old_drugs', 'pha4ge_sars-cov-2_contextual_data_specification', 'corona-Infections-usa', 'iontobioethics', 'opensafely', 'iDASH', 'Rhapsody', 'FACEPAI', 'TupaiaBase', 'GoldenMutagenesis', 'PyLandStats'] 
- There are in total 35 ids.

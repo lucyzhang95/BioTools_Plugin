@@ -17,7 +17,7 @@ A folder with all files related to new parser with raw biotool.json
 
 [bio_tools_original.json](New_Parsing/bio_tools_original.json) is the original raw json file obtained from Elixir bio.tools resource list
 
-[ids_not_in_gihub.txt](New_Parsing/ids_not_in_gihub.txt) contains the bio.tool IDs that are not in GitHub repository but avaliable in original bio.tool resource list
+[ids_not_in_gihub.txt](New_Parsing/ids_not_in_github.txt) contains the bio.tool IDs that are not in GitHub repository but avaliable in original bio.tool resource list
 
 [biotools_covid_bioschema.json](New_Parsing/biotools_covid_bioschema.json) is the json file contains the raw biotool.json obtained from GitHub repository
 
